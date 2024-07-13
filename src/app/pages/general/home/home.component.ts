@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 import { environment } from '../../../../environments/environment';
 
 import { Feature } from './feature';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -20,8 +21,10 @@ export class HomeComponent {
   fontawesome = environment.application.fontawesome;
 
   features: Feature[];
+  private titleService = inject(Title);
 
   constructor() {
+    this.titleService.setTitle("home page");
     this.features =
       [
         {

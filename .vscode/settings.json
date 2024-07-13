@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/08fff698-9f9a-4771-8fe9-2f4596550f52/resourceGroups/EShop/providers/Microsoft.Web/sites/angularssrtestingwithreverseproxy",
+    "appService.deploySubpath": "."
+}
